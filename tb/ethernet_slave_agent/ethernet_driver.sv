@@ -61,7 +61,7 @@ task mac_driver::send_to_dut();
   end
   else if(!vif.reset) begin
     
-    //------------ Frame 
+    // ------------ Frame 
     //`uvm_info("ETH_DRIVER", " After reseting the system", UVM_NONE);
     if(tnx.pkt_type == FRAME) begin
       `uvm_info("ETH_DRIVER", " Ethernet driver with FRAME", UVM_NONE);
