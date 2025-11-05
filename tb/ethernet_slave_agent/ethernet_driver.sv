@@ -61,9 +61,7 @@ task mac_driver::send_to_dut();
   end
   else if(!vif.reset) begin
     
-    //------------ FRAME
-    
-    
+    //------------ Frame 
     //`uvm_info("ETH_DRIVER", " After reseting the system", UVM_NONE);
     if(tnx.pkt_type == FRAME) begin
       `uvm_info("ETH_DRIVER", " Ethernet driver with FRAME", UVM_NONE);
@@ -126,9 +124,7 @@ task mac_driver::send_to_dut();
       
     end // When IPv6 Pkt
   end // when RST = 0
-    
  
-  
 endtask
                 
                 
